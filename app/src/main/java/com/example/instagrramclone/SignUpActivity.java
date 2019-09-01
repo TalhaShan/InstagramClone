@@ -61,6 +61,7 @@ public class SignUpActivity extends AppCompatActivity implements View.OnClickLis
             public void onClick(View v) {
                 allkickboxers="";
                 ParseQuery<ParseObject> queryall = ParseQuery.getQuery("KickBooxer");
+                queryall.whereGreaterThan("punchspeed",10);
                 queryall.findInBackground(new FindCallback<ParseObject>() {
                     @Override
                     public void done(List<ParseObject> objects, ParseException e) {
