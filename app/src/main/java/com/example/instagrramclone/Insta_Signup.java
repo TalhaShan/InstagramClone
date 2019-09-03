@@ -99,6 +99,8 @@ public class Insta_Signup extends AppCompatActivity {
         private  void transitionSocailmediaActivity(){
                 Intent intent = new Intent(Insta_Signup.this,SocialMediaActivity.class);
                 startActivity(intent);
-        }
+                finish();
+    }
+
 
 }

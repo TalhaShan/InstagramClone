@@ -52,6 +52,7 @@ public class Activity_Sign_in extends AppCompatActivity {
     private  void transitionSocailmediaActivity(){
         Intent intent = new Intent(Activity_Sign_in.this,SocialMediaActivity.class);
         startActivity(intent);
+        finish();
     }
 
 }
